@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+
+<title>Amos Oluwafemi — Developer</title>
+</head>
+<body>
+
+<nav>
+  <div class="left"><a href="index.html">Amos<span class="dot">.</span>O</a></div>
+  <div class="right">
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="cta-link">Let's talk</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-grid">
+      <div class="text">
+        <p class="eyebrow">//full-stack developer</p>
+        <h1>I build platforms that<br>run real businesses<span class="cursor">_</span></h1>
+        <p class="lead">Full-stack developer crafting fast, responsive interfaces with React, JavaScript, and modern CSS — and increasingly, the PHP/MySQL systems that power them in production. Currently building and maintaining a live multi-subsidiary platform under D-WOL Consulting.</p>
+        <div class="links">
+          <a href="#work"><i class="fa-solid fa-diagram-project"></i><span>See the work</span></a>
+          <a href="#contact"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+        </div>
+      </div>
+      <div class="headshot">
+        <div class="headshot-frame">
+          <img src="images/Pro_pics.jpg" alt="Amos Oluwafemi headshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills-section">
+    <p class="eyebrow">// toolkit</p>
+    <h2>Skills</h2>
+    <div class="cells">
+      <div class="cell"><img src="images/HTML logo.jpeg" alt="html logo"><span>HTML</span></div>
+      <div class="cell"><img src="images/CSS logo.png" alt="css logo"><span>CSS</span></div>
+      <div class="cell"><img src="images/JS logo.webp" alt="Js logo"><span>JavaScript</span></div>
+      <div class="cell"><img src="images/REACT.JS logo.webp" alt="React.js logo"><span>React.js</span></div>
+      <div class="cell"><i class="fa-brands fa-php cell-icon"></i><span>PHP</span></div>
+      <div class="cell"><i class="fa-solid fa-database cell-icon"></i><span>MySQL</span></div>
+    </div>
+  </section>
+
+  <!-- WORK: project grid -->
+  <section id="work" class="work-section">
+    <p class="eyebrow">// selected work</p>
+    <h2>Work</h2>
+    <p class="section-lead">Click a project to see how it was built — the problems, the tools, and what the client had to say.</p>
+
+    <div class="project-grid">
+
+      <!-- PROJECT CARD: D-WOL Platform -->
+      <a class="project-card" href="project-dwol-platform.html">
+        <div class="project-thumb">
+          <div class="placeholder">
+            <img src="images/Dwol homepage.png" alt="D-WOL Consulting platform screenshot" onerror="this.style.display='none'">
+            <i class="fa-solid fa-image"></i><span>Add D-WOL platform screenshot</span>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>D-WOL Consulting Platform</h3>
+          <p>One PHP/MySQL backend running booking and ordering for four subsidiaries — Homes, Table Water, Fanzone, and Real Estate.</p>
+          <div class="tags">
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">AJAX</span>
+          </div>
+          <span class="view-link">View case study <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Future project card template — duplicate this block for new projects -->
+      <div class="project-card project-card-empty">
+        <div class="project-thumb">
+          <div class="placeholder"><i class="fa-solid fa-plus"></i><span>Next project coming soon</span></div>
+        </div>
+        <div class="project-card-body">
+          <h3>More on the way</h3>
+          <p>New case studies get added here as projects ship.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <p class="eyebrow">// get in touch</p>
+    <h2>Contact</h2>
+    <div class="group">
+      <div class="text">
+        <p>Have a platform to build or a system to fix? I'd like to hear about it.</p>
+        <div class="contact-direct">
+          <a href="mailto:amosoluwafemi7@gmail.com"><i class="fa-solid fa-envelope"></i> amosoluwafemi7@gmail.com</a>
+          <a href="https://github.com/amosoluwafemi/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/amos-oluwafemi-a669a6280/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <form id="contactForm" action="https://formspree.io/f/mzzjnwyv" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" cols="30" rows="8" required></textarea>
+
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

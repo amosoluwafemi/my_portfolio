@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+
+<title>D-WOL Consulting Platform — Case Study | Amos Oluwafemi</title>
+</head>
+<body>
+
+<nav>
+  <div class="left"><a href="index.html">Amos<span class="dot">.</span>O</a></div>
+  <div class="right">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#contact" class="cta-link">Let's talk</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- PROJECT HEADER -->
+  <section class="project-header">
+    <a class="back-link" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> All work</a>
+    <p class="eyebrow">// case study</p>
+    <h1>D-WOL Consulting Platform</h1>
+    <p class="lead">A single live PHP/MySQL system running booking and ordering for four separate businesses — built and maintained end-to-end for D-WOL Consulting.</p>
+    <div class="project-meta">
+      <div class="meta-item">
+        <span class="meta-label">Client</span>
+        <span class="meta-value">D-WOL Consulting</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Role</span>
+        <span class="meta-value">Developer — build &amp; maintenance</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Stack</span>
+        <span class="meta-value">PHP, MySQL, AJAX, JS</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Hosting</span>
+        <span class="meta-value">Whogohost / DirectAdmin</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO SCREENSHOT -->
+  <section class="project-shot-section">
+    <div class="placeholder large-placeholder">
+      <img src="images/Dwol homepage.png" alt="D-WOL Consulting platform main screenshot" onerror="this.style.display='none'">
+      <i class="fa-solid fa-image"></i><span>Add main platform screenshot</span>
+    </div>
+  </section>
+
+  <!-- SYSTEM MAP -->
+  <section class="work-section">
+    <p class="eyebrow">// architecture</p>
+    <h2>One core. Four businesses.</h2>
+    <p class="section-lead">D-WOL Consulting needed a single backend to run four subsidiaries — each with its own booking or ordering flow, all sharing one platform.</p>
+
+    <div class="system-map" role="img" aria-label="D-WOL Consulting platform architecture: one core system branching into four subsidiary modules">
+      <div class="node core">
+        <span class="node-label">D-WOL CONSULTING</span>
+        <span class="node-sub">core platform · PHP / MySQL</span>
+      </div>
+      <svg class="map-lines" viewBox="0 0 800 160" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M400,0 C400,40 140,40 140,80" />
+        <path d="M400,0 C400,40 340,40 340,80" />
+        <path d="M400,0 C400,40 460,40 460,80" />
+        <path d="M400,0 C400,40 660,40 660,80" />
+      </svg>
+      <div class="node-row">
+        <div class="node leaf">
+          <span class="node-label">D-Wol Homes</span>
+          <span class="node-sub">Apartment reservations</span>
+        </div>
+        <div class="node leaf">
+          <span class="node-label">D-Wol Table Water</span>
+          <span class="node-sub">order &amp; delivery</span>
+        </div>
+        <div class="node leaf">
+          <span class="node-label">Fanzone Sport Lounge</span>
+          <span class="node-sub">reservations &amp; billing</span>
+        </div>
+        <div class="node leaf">
+          <span class="node-label">D-Wol Real Estate</span>
+          <span class="node-sub">listings &amp; enquiries</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- supporting screenshots -->
+    <div class="project-gallery">
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/Homes homepage.png" alt="D-Wol Homes booking module screenshot" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Homes module — add screenshot</span>
+        </div>
+      </figure>
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/fanzone homepage.png" alt="Fanzone Homepage" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Fanzone Homepage</span>
+        </div>
+      </figure>
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/properties homepage.png" alt="Properties homepage" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Properties Homepage</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- HOW IT WAS BUILT -->
+  <section class="work-section">
+    <p class="eyebrow">// how it was built</p>
+    <h2>What I solved</h2>
+    <p class="section-lead">The platform was already live, so every fix had to hold up in production, not just on localhost.</p>
+
+    <div class="case-study">
+      <div class="case-col">
+        <ul class="case-list">
+          <li><strong>Broken Fanzone tab navigation</strong> — caused by missing <code>type="button"</code> attributes on form buttons, fixed across the module.</li>
+          <li><strong>Fatal PHP redeclaration error</strong> — tracked a function being declared twice in <code>includes/db.php</code>, breaking every page that loaded it.</li>
+          <li><strong>Rebuilt the Fanzone bill flow</strong> — moved it to AJAX, backed by a new <code>fanzone/get_bill_items.php</code> endpoint, so bills update without a page reload.</li>
+          <li><strong>Live-server path bugs</strong> — the <code>/dewol/</code> prefix on the live host was silently breaking <code>file_exists()</code>, <code>unlink()</code>, and <code>fetch()</code> calls that worked fine locally.</li>
+          <li><strong>Hardcoded JS fetch paths</strong> — replaced with a <code>window.SITE_URL</code> value injected from <code>includes/header.php</code>, so the same JS works on localhost and live.</li>
+          <li><strong>Missing AJAX handlers</strong> — created four missing handler files across the water, homes, and Fanzone modules.</li>
+          <li><strong>Rebuilt the email system</strong> — <code>includes/notify.php</code> now triggers manager alerts after in-app notifications, every AJAX handler sends customer status-change emails, and a new <code>sendCustomerAcknowledgment()</code> function was added to <code>includes/mailer.php</code>.</li>
+        </ul>
+      </div>
+      <div class="case-col stack-col">
+        <h3>Tools used</h3>
+        <div class="tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AJAX</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">phpMyAdmin</span>
+          <span class="tag">DirectAdmin</span>
+          <span class="tag">Whogohost</span>
+          <span class="tag">XAMPP</span>
+        </div>
+        <a class="repo-link" href="https://github.com/amosoluwafemi/dewol-consulting-platform" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> View repository
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO TESTIMONY -->
+  <section class="testimony-section">
+    <p class="eyebrow">// from the client</p>
+    <h2>Testimony</h2>
+    <div class="group">
+      <div class="person-details">
+        <img src="images/ceo.jpg" alt="CEO, D-WOL Consulting" class="person-photo">
+        <p>CEO</p>
+        <p class="role">D-WOL Consulting</p>
+      </div>
+      <blockquote class="text">Add the CEO's quote here once you have it — speak to how the platform runs day-to-day across the four subsidiaries now.</blockquote>
+    </div>
+  </section>
+
+  <!-- NEXT / CONTACT -->
+  <section class="contact-section">
+    <p class="eyebrow">// get in touch</p>
+    <h2>Have a similar problem?</h2>
+    <div class="group">
+      <div class="text">
+        <p>I build and maintain systems like this one — if you've got a platform to build or a live one that needs fixing, let's talk.</p>
+        <div class="contact-direct">
+          <a href="mailto:amosoluwafemi7@gmail.com"><i class="fa-solid fa-envelope"></i> amosoluwafemi7@gmail.com</a>
+          <a href="https://github.com/amosoluwafemi/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/amos-oluwafemi-a669a6280/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <a class="back-link inline-back" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> Back to all work</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
