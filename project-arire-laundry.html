@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+
+<title>Arire Laundry Services — Case Study | Amos Oluwafemi</title>
+</head>
+<body>
+
+<nav>
+  <div class="left"><a href="index.html">Amos<span class="dot">.</span>O</a></div>
+  <div class="right">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#contact" class="cta-link">Let's talk</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- PROJECT HEADER -->
+  <section class="project-header">
+    <a class="back-link" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> All work</a>
+    <p class="eyebrow">// case study</p>
+    <h1>Arire Laundry Services</h1>
+    <p class="lead">A complete internal management system built with Flask and MySQL — giving a laundry business full control over customers, orders, staff, payments, invoices, and pickup/delivery tracking from one dashboard.</p>
+    <div class="project-meta">
+      <div class="meta-item">
+        <span class="meta-label">Client</span>
+        <span class="meta-value">Arire Laundry Services</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Type</span>
+        <span class="meta-value">Internal staff &amp; admin tool</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Stack</span>
+        <span class="meta-value">Python, Flask, MySQL</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Architecture</span>
+        <span class="meta-value">Blueprint factory pattern</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO SCREENSHOT -->
+  <section class="project-shot-section">
+    <div class="placeholder large-placeholder">
+      <img src="images/arire-dashboard.jpg" alt="Arire Laundry management system main Picture" onerror="this.style.display='none'">
+      <i class="fa-solid fa-image"></i><span>Main dashboard screenshot</span>
+    </div>
+  </section>
+
+  <!-- WHAT IT DOES -->
+  <section class="work-section">
+    <p class="eyebrow">// what it does</p>
+    <h2>A full system for a real operation.</h2>
+    <p class="section-lead">Before this system, the laundry business was tracking orders and payments manually. Now everything runs through one internal tool that staff log into daily.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <i class="fa-solid fa-users feature-icon"></i>
+        <h3>Customer Management</h3>
+        <p>Full customer records — contact details, order history, and status — all in one place.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-shirt feature-icon"></i>
+        <h3>Order &amp; Job Tracking</h3>
+        <p>Every laundry job is logged with status updates from drop-off through to collection.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-file-invoice-dollar feature-icon"></i>
+        <h3>Payments &amp; Invoicing</h3>
+        <p>Payment records tied to each order, with invoice generation built in.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-truck feature-icon"></i>
+        <h3>Pickup &amp; Delivery Tracking</h3>
+        <p>Staff can log and update pickup and delivery status per customer order in real time.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-lock feature-icon"></i>
+        <h3>Staff Login &amp; Auth</h3>
+        <p>Secure login system with Flask-Login — only authorised staff can access the system.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-gauge feature-icon"></i>
+        <h3>Admin Dashboard</h3>
+        <p>A stats overview so management can see orders, revenue, and delivery status at a glance.</p>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="project-gallery" style="margin-top: 50px;">
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/arire-dashboard.jpg" alt="Arire dashboard screenshot" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Dashboard — add screenshot</span>
+        </div>
+      </figure>
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/arire-orders.jpg" alt="Arire orders page screenshot" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Order tracking — add screenshot</span>
+        </div>
+      </figure>
+      <figure class="shot-slot">
+        <div class="placeholder">
+          <img src="images/arire-invoice.jpg" alt="Arire invoice screenshot" onerror="this.style.display='none'">
+          <i class="fa-solid fa-image"></i><span>Invoice/payment — add screenshot</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- HOW IT WAS BUILT -->
+  <section class="work-section">
+    <p class="eyebrow">// how it was built</p>
+    <h2>Under the hood</h2>
+
+    <div class="case-study">
+      <div class="case-col">
+        <ul class="case-list">
+          <li>Built on a <strong>Flask factory pattern</strong> with application blueprints — each module (auth, customers, orders, payments, delivery) registered as its own blueprint to keep the codebase clean and scalable.</li>
+          <li><strong>Flask-Login</strong> handles staff authentication, session management, and route protection — unauthenticated users are redirected to the login page automatically.</li>
+          <li><strong>MySQL database</strong> via Flask-MySQLdb, with separate tables for customers, orders, jobs, payments, and delivery records — all linked by foreign keys.</li>
+          <li>The <strong>dashboard blueprint</strong> aggregates live stats — total orders, pending deliveries, recent payments — pulled fresh from the database on each load.</li>
+          <li>Invoice generation is handled server-side and rendered as a printable HTML view styled separately from the main UI.</li>
+          <li>The whole system runs <strong>internally</strong> — it's a staff tool, not customer-facing, so speed and clarity for the people using it daily was the priority over aesthetics.</li>
+        </ul>
+      </div>
+      <div class="case-col stack-col">
+        <h3>Tools used</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Flask-Login</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Jinja2</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Blueprint Architecture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONY -->
+  <section class="testimony-section">
+    <p class="eyebrow">// from the client</p>
+    <h2>Testimony</h2>
+    <div class="group">
+      <div class="person-details">
+        <img src="images/arire-thumb.jpg" alt="Arire Laundry Services client" class="person-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="avatar-fallback"><i class="fa-solid fa-user"></i></div>
+        <p>Owner</p>
+        <p class="role">Arire Laundry Services</p>
+      </div>
+      <blockquote class="text">"This is exactly the kind of digital transformation every modern laundry business needs. Rather than managing customers, orders, payments, staff activities, and delivery records across notebooks, spreadsheets, and multiple applications, this system centralizes everything into one platform.<br><p><i></i> developer didn't just build software; he built an operational backbone for the company. This system positions Arire Laundry Services to operate more professionally, serve customers better, and grow with confidence."</i></p></blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <p class="eyebrow">// get in touch</p>
+    <h2>Need something similar?</h2>
+    <div class="group">
+      <div class="text">
+        <p>I build internal tools and management systems for real businesses. If you've got a process that needs a proper system, let's talk.</p>
+        <div class="contact-direct">
+          <a href="mailto:amosoluwafemi7@gmail.com"><i class="fa-solid fa-envelope"></i> amosoluwafemi7@gmail.com</a>
+          <a href="http://github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <a class="back-link inline-back" href="index.html#work"><i class="fa-solid fa-arrow-left"></i> Back to all work</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
